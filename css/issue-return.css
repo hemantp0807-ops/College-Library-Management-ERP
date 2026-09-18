@@ -1,0 +1,201 @@
+.issue-return-page {
+    padding: 30px;
+}
+
+.page-heading {
+    margin-bottom: 25px;
+}
+
+.page-heading h2 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.page-heading p {
+    margin: 7px 0 0;
+    color: #777;
+}
+
+.transaction-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 22px;
+    margin-bottom: 25px;
+}
+
+.transaction-form-card,
+.summary-card,
+.issued-card {
+    background: #fff;
+    border: 1px solid #e7e7e7;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+.card-heading {
+    margin-bottom: 22px;
+}
+
+.card-heading span {
+    font-size: 11px;
+    font-weight: 700;
+    color: #777;
+    letter-spacing: 1px;
+}
+
+.card-heading h3 {
+    margin: 5px 0 0;
+    font-size: 20px;
+}
+
+.form-group {
+    margin-bottom: 17px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.form-group input,
+.section-heading select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px 13px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    font-size: 13px;
+    outline: none;
+}
+
+.member-info,
+.book-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 14px;
+    margin: -5px 0 18px;
+    background: #f7f7f7;
+    border-radius: 7px;
+    font-size: 13px;
+}
+
+.member-info span,
+.book-info span {
+    color: #777;
+}
+
+.date-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.primary-button {
+    width: 100%;
+    padding: 12px;
+    border: 0;
+    border-radius: 7px;
+    background: #111;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.summary-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.summary-item:last-child {
+    border-bottom: 0;
+}
+
+.summary-item span {
+    color: #666;
+    font-size: 13px;
+}
+
+.summary-item strong {
+    font-size: 20px;
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.section-heading h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.section-heading p {
+    margin: 5px 0 0;
+    color: #777;
+    font-size: 13px;
+}
+
+.section-heading select {
+    width: 150px;
+}
+
+.issued-table {
+    width: 100%;
+}
+
+.issued-row {
+    display: grid;
+    grid-template-columns: 1.1fr 1.5fr 1fr 1fr .8fr .7fr;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 8px;
+    border-bottom: 1px solid #eee;
+    font-size: 13px;
+}
+
+.issued-row:last-child {
+    border-bottom: 0;
+}
+
+.issued-header {
+    font-size: 11px;
+    font-weight: 700;
+    color: #777;
+    text-transform: uppercase;
+}
+
+.issued-row button {
+    padding: 7px 10px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.status {
+    display: inline-block;
+    width: fit-content;
+    padding: 5px 9px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.status.normal {
+    background: #edf7ef;
+    color: #28743a;
+}
+
+.status.overdue {
+    background: #fff0f0;
+    color: #b52b2b;
+}

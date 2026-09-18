@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issue & Return - Library ERP</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/issue-return.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <div class="header-logo">
+            <img src="../logo.png" alt="College Library Logo">
+
+            <div class="brand-info">
+                <strong>Library ERP</strong>
+                <span>College Management System</span>
+            </div>
+        </div>
+
+        <div class="topbar">
+
+            <button class="menu-btn" id="menuBtn" type="button">
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+            </button>
+
+            <div class="welcome">
+                <h1>College Library Management ERP</h1>
+                <p>Welcome back, <strong>Sanika!</strong></p>
+            </div>
+
+            <div class="header-actions">
+
+                <div class="search-area">
+                    <button class="search-btn" id="searchBtn" type="button">
+                        <img src="../icons/search.svg" alt="Search">
+                    </button>
+
+                    <input type="search"
+                           id="bookSearch"
+                           placeholder="Search Books..."
+                           aria-label="Search Books">
+                </div>
+
+                <div class="header-profile">
+                    <div class="header-avatar">S</div>
+
+                    <div class="header-user">
+                        <strong>Sanika</strong>
+                        <span>Library Administrator</span>
+                    </div>
+
+                    <a href="my-profile.html" class="header-profile-link">
+                        <img src="../icons/user.svg" alt="My Profile">
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <aside class="sidebar" id="sidebar">
+
+        <nav class="sidebar-nav">
+
+            <div class="nav-section">
+
+                <span class="nav-title">MAIN MENU</span>
+
+                <a href="../index.html" class="nav-item">
+                    <img src="../icons/home.svg" alt="Dashboard">
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="book-catalog.html" class="nav-item">
+                    <img src="../icons/catalog.svg" alt="Book Catalog">
+                    <span>Book Catalog</span>
+                </a>
+
+                <a href="members.html" class="nav-item">
+                    <img src="../icons/members.svg" alt="Members">
+                    <span>Members</span>
+                </a>
+
+                <a href="issue-return.html" class="nav-item active">
+                    <img src="../icons/books.svg" alt="Issue and Return">
+                    <span>Issue & Return</span>
+                </a>
+
+                <a href="reports.html" class="nav-item">
+                    <img src="../icons/heart.svg" alt="Reports">
+                    <span>Reports</span>
+                </a>
+
+                <a href="reservations.html" class="nav-item">
+                    <img src="../icons/calendar.svg" alt="Reservations">
+                    <span>Reservations</span>
+                </a>
+
+                <a href="notifications.html" class="nav-item">
+                    <img src="../icons/notifications.svg" alt="Notifications">
+                    <span>Notifications</span>
+                </a>
+
+            </div>
+
+            <div class="nav-section account-section">
+
+                <span class="nav-title">ADMINISTRATION</span>
+
+                <a href="library-card.html" class="nav-item">
+                    <img src="../icons/card.svg" alt="Library Cards">
+                    <span>Library Cards</span>
+                </a>
+
+                <a href="my-profile.html" class="nav-item">
+                    <img src="../icons/user.svg" alt="Admin Profile">
+                    <span>Admin Profile</span>
+                </a>
+
+                <a href="settings.html" class="nav-item">
+                    <img src="../icons/settings.svg" alt="Settings">
+                    <span>Settings</span>
+                </a>
+
+                <a href="help.html" class="nav-item">
+                    <img src="../icons/help.svg" alt="Help">
+                    <span>Help</span>
+                </a>
+
+            </div>
+
+        </nav>
+
+    </aside>
+
+    <main class="main">
+
+        <section class="issue-return-page">
+
+            <div class="page-heading">
+                <div>
+                    <h2>Issue & Return</h2>
+                    <p>Manage book issues and returns for library members.</p>
+                </div>
+            </div>
+
+            <div class="transaction-grid">
+
+                <section class="transaction-form-card">
+
+                    <div class="card-heading">
+                        <div>
+                            <span>BOOK ISSUE</span>
+                            <h3>Issue Book</h3>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="memberId">Member ID</label>
+                        <input type="text" id="memberId" placeholder="Enter member ID">
+                    </div>
+
+                    <div class="member-info">
+                        <span>Member Name</span>
+                        <strong>Rahul Patil</strong>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bookId">Book ID</label>
+                        <input type="text" id="bookId" placeholder="Enter book ID">
+                    </div>
+
+                    <div class="book-info">
+                        <span>Book Name</span>
+                        <strong>Data Structures</strong>
+                    </div>
+
+                    <div class="date-grid">
+
+                        <div class="form-group">
+                            <label for="issueDate">Issue Date</label>
+                            <input type="date" id="issueDate" value="2026-09-11">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="dueDate">Due Date</label>
+                            <input type="date" id="dueDate" value="2026-09-25">
+                        </div>
+
+                    </div>
+
+                    <button type="button" class="primary-button">
+                        Issue Book
+                    </button>
+
+                </section>
+
+                <section class="summary-card">
+
+                    <div class="card-heading">
+                        <div>
+                            <span>TODAY</span>
+                            <h3>Transaction Summary</h3>
+                        </div>
+                    </div>
+
+                    <div class="summary-item">
+                        <span>Books Issued Today</span>
+                        <strong>24</strong>
+                    </div>
+
+                    <div class="summary-item">
+                        <span>Books Returned Today</span>
+                        <strong>18</strong>
+                    </div>
+
+                    <div class="summary-item">
+                        <span>Overdue Books</span>
+                        <strong>31</strong>
+                    </div>
+
+                    <div class="summary-item">
+                        <span>Available Books</span>
+                        <strong>2,264</strong>
+                    </div>
+
+                </section>
+
+            </div>
+
+            <section class="issued-card">
+
+                <div class="section-heading">
+                    <div>
+                        <h3>Currently Issued Books</h3>
+                        <p>Books currently issued to library members.</p>
+                    </div>
+
+                    <select>
+                        <option>All Members</option>
+                        <option>Students</option>
+                        <option>Faculty</option>
+                    </select>
+                </div>
+
+                <div class="issued-table">
+
+                    <div class="issued-row issued-header">
+                        <span>Member</span>
+                        <span>Book</span>
+                        <span>Issue Date</span>
+                        <span>Due Date</span>
+                        <span>Status</span>
+                        <span>Action</span>
+                    </div>
+
+                    <div class="issued-row">
+                        <span>Rahul Patil</span>
+                        <span>Data Structures</span>
+                        <span>11 Sep 2026</span>
+                        <span>25 Sep 2026</span>
+                        <span class="status normal">Issued</span>
+                        <button type="button">Return</button>
+                    </div>
+
+                    <div class="issued-row">
+                        <span>Amit More</span>
+                        <span>Operating Systems</span>
+                        <span>10 Sep 2026</span>
+                        <span>24 Sep 2026</span>
+                        <span class="status normal">Issued</span>
+                        <button type="button">Return</button>
+                    </div>
+
+                    <div class="issued-row">
+                        <span>Neha Joshi</span>
+                        <span>Database Management</span>
+                        <span>08 Sep 2026</span>
+                        <span>22 Sep 2026</span>
+                        <span class="status overdue">Overdue</span>
+                        <button type="button">Return</button>
+                    </div>
+
+                    <div class="issued-row">
+                        <span>Priya Sharma</span>
+                        <span>Computer Networks</span>
+                        <span>05 Sep 2026</span>
+                        <span>19 Sep 2026</span>
+                        <span class="status normal">Issued</span>
+                        <button type="button">Return</button>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <script src="../script.js"></script>
+
+</body>
+
+</html>
