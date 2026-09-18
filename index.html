@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Library Management ERP</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-logo">
+            <img src="logo.png" alt="College Library Logo">
+            <div class="brand-info">
+                <strong>Library ERP</strong>
+                <span>College Management System</span>
+            </div>
+        </div>
+
+        <div class="topbar">
+            <button class="menu-btn" id="menuBtn" type="button">
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+            </button>
+
+            <div class="welcome">
+                <h1>College Library Management ERP</h1>
+                <p>Welcome back, <strong>Sanika!</strong></p>
+            </div>
+
+            <div class="header-actions">
+                <div class="search-area">
+                    <button class="search-btn" id="searchBtn" type="button">
+                        <img src="icons/search.svg" alt="Search">
+                    </button>
+                    <input type="search" id="bookSearch" placeholder="Search Books..." aria-label="Search Books">
+                </div>
+
+                <div class="header-profile">
+                    <div class="header-avatar">S</div>
+                    <div class="header-user">
+                        <strong>Sanika</strong>
+                        <span>Library Member</span>
+                    </div>
+                    <a href="pages/my-profile.html" class="header-profile-link">
+                        <img src="icons/user.svg" alt="My Profile">
+                    </a>
+                </div>
+            </div>
+        </div>  
+    </header>
+
+    <aside class="sidebar" id="sidebar">
+        <nav class="sidebar-nav">
+            <div class="nav-section">
+                <span class="nav-title">MAIN MENU</span>
+
+                <a href="index.html" class="nav-item active">
+                    <img src="icons/home.svg" alt="Dashboard">
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="pages/book-catalog.html" class="nav-item">
+                    <img src="icons/catalog.svg" alt="Book Catalog">
+                    <span>Book Catalog</span>
+                </a>
+
+                <a href="pages/members.html" class="nav-item">
+                    <img src="icons/members.svg" alt="Members">
+                    <span>Members</span>
+                </a>
+
+                <a href="pages/my-books.html" class="nav-item">
+                    <img src="icons/books.svg" alt="My Books">
+                    <span>My Books</span>
+                </a>
+
+                <a href="pages/wishlist.html" class="nav-item">
+                    <img src="icons/heart.svg" alt="Wishlist">
+                    <span>Wishlist</span>
+                </a>
+
+                <a href="pages/reservations.html" class="nav-item">
+                    <img src="icons/calendar.svg" alt="Reservations">
+                    <span>Reservations</span>
+                </a>
+
+                <a href="pages/notifications.html" class="nav-item">
+                    <img src="icons/notifications.svg" alt="Notifications">
+                    <span>Notifications</span>
+                </a>
+            </div>
+
+            <div class="nav-section account-section">
+                <span class="nav-title">ACCOUNT</span>
+
+                <a href="pages/library-card.html" class="nav-item">
+                    <img src="icons/card.svg" alt="Library Card">
+                    <span>Library Card</span>
+                </a>
+
+                <a href="pages/my-profile.html" class="nav-item">
+                    <img src="icons/user.svg" alt="My Profile">
+                    <span>My Profile</span>
+                </a>
+
+                <a href="pages/settings.html" class="nav-item">
+                    <img src="icons/settings.svg" alt="Settings">
+                    <span>Settings</span>
+                </a>
+
+                <a href="pages/help.html" class="nav-item">
+                    <img src="icons/help.svg" alt="Help">
+                    <span>Help</span>
+                </a>
+            </div>
+        </nav>
+    </aside>
+
+    <main class="main">
+        <section class="content">
+            <div class="stat-grid">
+                <button class="stat-card available" type="button">
+                    <span>Total Books</span>
+                    <strong>2,450</strong>
+                    <small>Books in the library</small>
+                </button>
+
+                <button class="stat-card arrivals" type="button">
+                    <span>Issued Books</span>
+                    <strong>186</strong>
+                    <small>Currently issued books</small>
+                </button>
+
+                <button class="stat-card reserved" type="button">
+                    <span>Total Members</span>
+                    <strong>1,240</strong>
+                    <small>Registered library members</small>
+                </button>
+            </div>
+
+            <div class="dashboard-grid">
+                <section class="collection-card">
+                    <h2>Book Collections</h2>
+
+                    <div class="collection-body">
+                        <div class="featured-book">
+                            <img src="images/harry-potter.png" alt="Harry Potter Collection" class="collection-image">
+                            <div class="collection-overlay">
+                                <strong>Harry Potter Collection</strong>
+                                <span>Explore Collection</span>
+                            </div>
+                        </div>
+
+                        <div class="mini-books">
+                            <div class="mini-book">
+                                <img src="images/fantasy.png" alt="Fantasy Collection">
+                                <span>Fantasy</span>
+                            </div>
+
+                            <div class="mini-book">
+                                <img src="images/mystery.png" alt="Mystery Collection">
+                                <span>Mystery</span>
+                            </div>
+
+                            <div class="mini-book">
+                                <img src="images/classics.png" alt="Classics Collection">
+                                <span>Classics</span>
+                            </div>
+
+                            <div class="mini-book">
+                                <img src="images/sci-fi.png" alt="Sci-Fi Collection">
+                                <span>Sci-Fi</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <aside class="quick-links">
+                    <h2>Quick Actions</h2>
+
+                    <button type="button" class="quick-link">
+                        <strong>Issue Book</strong>
+                        <span>Issue a book to a member</span>
+                    </button>
+
+                    <button type="button" class="quick-link">
+                        <strong>Return Book</strong>
+                        <span>Process a returned book</span>
+                    </button>
+
+                    <button type="button" class="quick-link">
+                        <strong>Reports</strong>
+                        <span>View library reports</span>
+                    </button>
+                </aside>
+            </div>
+
+            <section class="transactions-card">
+                <div class="section-heading">
+                    <h2>Recent Transactions</h2>
+                    <button type="button">View All</button>
+                </div>
+
+                <div class="transaction-table">
+                    <div class="transaction-row transaction-header">
+                        <span>Member</span>
+                        <span>Book</span>
+                        <span>Action</span>
+                        <span>Date</span>
+                    </div>
+
+                    <div class="transaction-row">
+                        <span>Rahul Patil</span>
+                        <span>Data Structures</span>
+                        <span class="issued">Issued</span>
+                        <span>11 Sep 2026</span>
+                    </div>
+
+                    <div class="transaction-row">
+                        <span>Priya Sharma</span>
+                        <span>Database Management</span>
+                        <span class="returned">Returned</span>
+                        <span>11 Sep 2026</span>
+                    </div>
+
+                    <div class="transaction-row">
+                        <span>Amit More</span>
+                        <span>Operating Systems</span>
+                        <span class="issued">Issued</span>
+                        <span>10 Sep 2026</span>
+                    </div>
+
+                    <div class="transaction-row">
+                        <span>Sneha Patil</span>
+                        <span>Computer Networks</span>
+                        <span class="returned">Returned</span>
+                        <span>10 Sep 2026</span>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

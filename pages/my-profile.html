@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - Library ERP</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/profile.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <div class="header-logo">
+            <img src="../logo.png" alt="College Library Logo">
+
+            <div class="brand-info">
+                <strong>Library ERP</strong>
+                <span>College Management System</span>
+            </div>
+        </div>
+
+        <div class="topbar">
+
+            <button class="menu-btn" id="menuBtn" type="button">
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+            </button>
+
+            <div class="welcome">
+                <h1>College Library Management ERP</h1>
+                <p>Welcome back, <strong>Sanika!</strong></p>
+            </div>
+
+            <div class="header-actions">
+
+                <div class="search-area">
+                    <button class="search-btn" id="searchBtn" type="button">
+                        <img src="../icons/search.svg" alt="Search">
+                    </button>
+
+                    <input type="search"
+                           id="bookSearch"
+                           placeholder="Search Books..."
+                           aria-label="Search Books">
+                </div>
+
+                <div class="header-profile">
+                    <div class="header-avatar">S</div>
+
+                    <div class="header-user">
+                        <strong>Sanika</strong>
+                        <span>Library Member</span>
+                    </div>
+
+                    <a href="my-profile.html" class="header-profile-link">
+                        <img src="../icons/user.svg" alt="My Profile">
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <aside class="sidebar" id="sidebar">
+
+        <nav class="sidebar-nav">
+
+            <div class="nav-section">
+
+                <span class="nav-title">MAIN MENU</span>
+
+                <a href="../index.html" class="nav-item">
+                    <img src="../icons/home.svg" alt="Dashboard">
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="book-catalog.html" class="nav-item">
+                    <img src="../icons/catalog.svg" alt="Book Catalog">
+                    <span>Book Catalog</span>
+                </a>
+
+                <a href="members.html" class="nav-item">
+                    <img src="../icons/members.svg" alt="Members">
+                    <span>Members</span>
+                </a>
+
+                <a href="my-books.html" class="nav-item">
+                    <img src="../icons/books.svg" alt="My Books">
+                    <span>My Books</span>
+                </a>
+
+                <a href="wishlist.html" class="nav-item">
+                    <img src="../icons/heart.svg" alt="Wishlist">
+                    <span>Wishlist</span>
+                </a>
+
+                <a href="reservations.html" class="nav-item">
+                    <img src="../icons/calendar.svg" alt="Reservations">
+                    <span>Reservations</span>
+                </a>
+
+                <a href="notifications.html" class="nav-item">
+                    <img src="../icons/notifications.svg" alt="Notifications">
+                    <span>Notifications</span>
+                </a>
+
+            </div>
+
+            <div class="nav-section account-section">
+
+                <span class="nav-title">ACCOUNT</span>
+
+                <a href="library-card.html" class="nav-item">
+                    <img src="../icons/card.svg" alt="Library Card">
+                    <span>Library Card</span>
+                </a>
+
+                <a href="my-profile.html" class="nav-item active">
+                    <img src="../icons/user.svg" alt="My Profile">
+                    <span>My Profile</span>
+                </a>
+
+                <a href="settings.html" class="nav-item">
+                    <img src="../icons/settings.svg" alt="Settings">
+                    <span>Settings</span>
+                </a>
+
+                <a href="help.html" class="nav-item">
+                    <img src="../icons/help.svg" alt="Help">
+                    <span>Help</span>
+                </a>
+
+            </div>
+
+        </nav>
+
+    </aside>
+
+    <main class="main">
+
+        <section class="profile-page">
+
+            <div class="profile-heading">
+                <div>
+                    <h2>My Profile</h2>
+                    <p>View and manage your library member information.</p>
+                </div>
+
+                <button class="edit-profile-btn" type="button">
+                    Edit Profile
+                </button>
+            </div>
+
+            <div class="profile-layout">
+
+                <section class="profile-card">
+
+                    <div class="profile-top">
+
+                        <div class="profile-avatar">
+                            <img src="../images/student-profile.png"
+                                 alt="Sanika Profile">
+                        </div>
+
+                        <div>
+                            <span class="profile-label">LIBRARY MEMBER</span>
+                            <h3>Sanika</h3>
+                            <p>Computer Science Student</p>
+                            <span class="profile-active">Active Member</span>
+                        </div>
+
+                    </div>
+
+                    <div class="profile-details">
+
+                        <div class="profile-detail">
+                            <span>MEMBER ID</span>
+                            <strong>LIB1024</strong>
+                        </div>
+
+                        <div class="profile-detail">
+                            <span>MEMBER TYPE</span>
+                            <strong>Student</strong>
+                        </div>
+
+                        <div class="profile-detail">
+                            <span>DEPARTMENT</span>
+                            <strong>Computer Science</strong>
+                        </div>
+
+                        <div class="profile-detail">
+                            <span>YEAR</span>
+                            <strong>Third Year</strong>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section class="contact-card">
+
+                    <div class="profile-section-heading">
+                        <span>PERSONAL INFORMATION</span>
+                        <h3>Contact Details</h3>
+                    </div>
+
+                    <div class="contact-list">
+
+                        <div class="contact-row">
+                            <span>Email Address</span>
+                            <strong>sanika@college.edu</strong>
+                        </div>
+
+                        <div class="contact-row">
+                            <span>Phone Number</span>
+                            <strong>+91 98765 43210</strong>
+                        </div>
+
+                        <div class="contact-row">
+                            <span>College</span>
+                            <strong>College of Engineering</strong>
+                        </div>
+
+                        <div class="contact-row">
+                            <span>Member Since</span>
+                            <strong>01 Aug 2024</strong>
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+            <section class="profile-activity">
+
+                <div class="profile-section-heading">
+                    <span>LIBRARY ACTIVITY</span>
+                    <h3>Membership Summary</h3>
+                </div>
+
+                <div class="profile-stats">
+
+                    <div>
+                        <span>Total Books Borrowed</span>
+                        <strong>18</strong>
+                    </div>
+
+                    <div>
+                        <span>Currently Issued</span>
+                        <strong>3</strong>
+                    </div>
+
+                    <div>
+                        <span>Books Returned</span>
+                        <strong>15</strong>
+                    </div>
+
+                    <div>
+                        <span>Reservations</span>
+                        <strong>2</strong>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <script src="../script.js"></script>
+
+</body>
+
+</html>

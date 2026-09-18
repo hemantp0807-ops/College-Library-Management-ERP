@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Catalog - Library ERP</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/catalog.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-logo">
+            <img src="../logo.png" alt="College Library Logo">
+            <div class="brand-info">
+                <strong>Library ERP</strong>
+                <span>College Management System</span>
+            </div>
+        </div>
+
+        <div class="topbar">
+            <button class="menu-btn" id="menuBtn" type="button">
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+            </button>
+
+            <div class="welcome">
+                <h1>College Library Management ERP</h1>
+                <p>Welcome back, <strong>Sanika!</strong></p>
+            </div>
+
+            <div class="header-actions">
+                <div class="search-area">
+                    <button class="search-btn" id="searchBtn" type="button">
+                        <img src="../icons/search.svg" alt="Search">
+                    </button>
+                    <input type="search" id="bookSearch" placeholder="Search Books..." aria-label="Search Books">
+                </div>
+
+                <div class="header-profile">
+                    <div class="header-avatar">S</div>
+
+                    <div class="header-user">
+                        <strong>Sanika</strong>
+                        <span>Library Member</span>
+                    </div>
+
+                    <a href="my-profile.html" class="header-profile-link">
+                        <img src="../icons/user.svg" alt="My Profile">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <aside class="sidebar" id="sidebar">
+        <nav class="sidebar-nav">
+            <div class="nav-section">
+                <span class="nav-title">MAIN MENU</span>
+
+                <a href="../index.html" class="nav-item">
+                    <img src="../icons/home.svg" alt="Dashboard">
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="book-catalog.html" class="nav-item active">
+                    <img src="../icons/catalog.svg" alt="Book Catalog">
+                    <span>Book Catalog</span>
+                </a>
+
+                <a href="members.html" class="nav-item">
+                    <img src="../icons/members.svg" alt="Members">
+                    <span>Members</span>
+                </a>
+
+                <a href="my-books.html" class="nav-item">
+                    <img src="../icons/books.svg" alt="My Books">
+                    <span>My Books</span>
+                </a>
+
+                <a href="wishlist.html" class="nav-item">
+                    <img src="../icons/heart.svg" alt="Wishlist">
+                    <span>Wishlist</span>
+                </a>
+
+                <a href="reservations.html" class="nav-item">
+                    <img src="../icons/calendar.svg" alt="Reservations">
+                    <span>Reservations</span>
+                </a>
+
+                <a href="notifications.html" class="nav-item">
+                    <img src="../icons/notifications.svg" alt="Notifications">
+                    <span>Notifications</span>
+                </a>
+            </div>
+
+            <div class="nav-section account-section">
+                <span class="nav-title">ACCOUNT</span>
+
+                <a href="library-card.html" class="nav-item">
+                    <img src="../icons/card.svg" alt="Library Card">
+                    <span>Library Card</span>
+                </a>
+
+                <a href="my-profile.html" class="nav-item">
+                    <img src="../icons/user.svg" alt="My Profile">
+                    <span>My Profile</span>
+                </a>
+
+                <a href="settings.html" class="nav-item">
+                    <img src="../icons/settings.svg" alt="Settings">
+                    <span>Settings</span>
+                </a>
+
+                <a href="help.html" class="nav-item">
+                    <img src="../icons/help.svg" alt="Help">
+                    <span>Help</span>
+                </a>
+            </div>
+        </nav>
+    </aside>
+
+    <main class="main">
+        <section class="catalog-page">
+    <div class="catalog-heading">
+        <div>
+            <h2>Book Catalog</h2>
+            <p>Explore books available in the college library.</p>
+        </div>
+        <span class="book-count">2,450 Books</span>
+    </div>
+
+    <div class="catalog-filters">
+        <div class="catalog-search">
+            <img src="../icons/search.svg" alt="Search">
+            <input type="search" placeholder="Search by title, author or subject...">
+        </div>
+
+        <select>
+            <option>All Categories</option>
+            <option>Fiction</option>
+            <option>Fantasy</option>
+            <option>Mystery</option>
+            <option>Literature</option>
+            <option>Biography</option>
+            <option>Self Help</option>
+            <option>History</option>
+            <option>Educational</option>
+        </select>
+
+        <select>
+            <option>All Availability</option>
+            <option>Available</option>
+            <option>Issued</option>
+            <option>Reserved</option>
+        </select>
+    </div>
+
+    <div class="catalog-grid">
+        <article class="book-card">
+            <div class="book-cover">
+                <img src="../images/harry-potter-book.jpg" alt="Harry Potter and the Philosopher's Stone">
+            </div>
+            <div class="book-info">
+                <span class="book-category">Fantasy</span>
+                <h3>Harry Potter and the Philosopher's Stone</h3>
+                <p>J. K. Rowling</p>
+                <div class="book-meta">
+                    <span>ISBN: 9780590353427</span>
+                    <span class="available-status">Available</span>
+                </div>
+                <div class="book-actions">
+                    <button type="button">Issue Book</button>
+                    <button type="button" class="secondary-btn">♡</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="book-card">
+            <div class="book-cover">
+                <img src="../images/alchemist.jpg" alt="The Alchemist">
+            </div>
+            <div class="book-info">
+                <span class="book-category">Fiction</span>
+                <h3>The Alchemist</h3>
+                <p>Paulo Coelho</p>
+                <div class="book-meta">
+                    <span>ISBN: 9780061122415</span>
+                    <span class="available-status">Available</span>
+                </div>
+                <div class="book-actions">
+                    <button type="button">Issue Book</button>
+                    <button type="button" class="secondary-btn">♡</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="book-card">
+            <div class="book-cover">
+                <img src="../images/hobbit.jpg" alt="The Hobbit">
+            </div>
+            <div class="book-info">
+                <span class="book-category">Fantasy</span>
+                <h3>The Hobbit</h3>
+                <p>J. R. R. Tolkien</p>
+                <div class="book-meta">
+                    <span>ISBN: 9780547928227</span>
+                    <span class="issued-status">Issued</span>
+                </div>
+                <div class="book-actions">
+                    <button type="button" class="reserve-btn">Reserve</button>
+                    <button type="button" class="secondary-btn">♡</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="book-card">
+            <div class="book-cover">
+                <img src="../images/sherlock-holmes.jpg" alt="Sherlock Holmes">
+            </div>
+            <div class="book-info">
+                <span class="book-category">Mystery</span>
+                <h3>The Adventures of Sherlock Holmes</h3>
+                <p>Arthur Conan Doyle</p>
+                <div class="book-meta">
+                    <span>ISBN: 9780553212419</span>
+                    <span class="available-status">Available</span>
+                </div>
+                <div class="book-actions">
+                    <button type="button">Issue Book</button>
+                    <button type="button" class="secondary-btn">♡</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="book-card">
+            <div class="book-cover">
+                <img src="../images/great-gatsby.jpg" alt="The Great Gatsby">
+            </div>
+            <div class="book-info">
+                <span class="book-category">Literature</span>
+                <h3>The Great Gatsby</h3>
+                <p>F. Scott Fitzgerald</p>
+                <div class="book-meta">
+                    <span>ISBN: 9780743273565</span>
+                    <span class="available-status">Available</span>
+                </div>
+                <div class="book-actions">
+                    <button type="button">Issue Book</button>
+                    <button type="button" class="secondary-btn">♡</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="book-card">
+            <div class="book-cover">
+                <img src="../images/atomic-habits.jpg" alt="Atomic Habits">
+            </div>
+            <div class="book-info">
+                <span class="book-category">Self Help</span>
+                <h3>Atomic Habits</h3>
+                <p>James Clear</p>
+                <div class="book-meta">
+                    <span>ISBN: 9780735211292</span>
+                    <span class="issued-status">Issued</span>
+                </div>
+                <div class="book-actions">
+                    <button type="button" class="reserve-btn">Reserve</button>
+                    <button type="button" class="secondary-btn">♡</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="book-card">
+            <div class="book-cover">
+                <img src="../images/rich-dad-poor-dad.jpg" alt="Rich Dad Poor Dad">
+            </div>
+            <div class="book-info">
+                <span class="book-category">Finance</span>
+                <h3>Rich Dad Poor Dad</h3>
+                <p>Robert T. Kiyosaki</p>
+                <div class="book-meta">
+                    <span>ISBN: 9781612680194</span>
+                    <span class="available-status">Available</span>
+                </div>
+                <div class="book-actions">
+                    <button type="button">Issue Book</button>
+                    <button type="button" class="secondary-btn">♡</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="book-card">
+            <div class="book-cover">
+                <img src="../images/brief-history-time.jpg" alt="A Brief History of Time">
+            </div>
+            <div class="book-info">
+                <span class="book-category">Science</span>
+                <h3>A Brief History of Time</h3>
+                <p>Stephen Hawking</p>
+                <div class="book-meta">
+                    <span>ISBN: 9780553380163</span>
+                    <span class="available-status">Available</span>
+                </div>
+                <div class="book-actions">
+                    <button type="button">Issue Book</button>
+                    <button type="button" class="secondary-btn">♡</button>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+.my-books-page {
+    margin-top: 161px;
+    padding: 35px 40px 50px;
+}
+
+.my-books-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.my-books-heading h2 {
+    margin: 0 0 7px;
+    font-size: 30px;
+    color: #222222;
+}
+
+.my-books-heading p {
+    margin: 0;
+    color: #777777;
+    font-size: 15px;
+}
+
+.browse-books-btn {
+    padding: 11px 18px;
+    border-radius: 7px;
+    background: var(--purple);
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.my-books-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.my-book-stat {
+    padding: 18px 20px;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 9px;
+}
+
+.my-book-stat span {
+    display: block;
+    margin-bottom: 7px;
+    color: #777777;
+    font-size: 13px;
+}
+
+.my-book-stat strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #222222;
+    font-size: 25px;
+}
+
+.my-book-stat small {
+    color: #999999;
+    font-size: 11px;
+}
+
+.issued-books-card,
+.borrowing-history-card {
+    margin-bottom: 25px;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+.my-books-section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.my-books-section-heading h3 {
+    margin: 0 0 5px;
+    color: #222222;
+    font-size: 17px;
+}
+
+.my-books-section-heading p {
+    margin: 0;
+    color: #888888;
+    font-size: 12px;
+}
+
+.my-books-section-heading > span {
+    color: var(--purple);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.issued-book {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 18px 20px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.issued-book:last-child {
+    border-bottom: 0;
+}
+
+.issued-book-cover {
+    width: 75px;
+    min-width: 75px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 5px;
+    background: #f1edff;
+}
+
+.issued-book-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.issued-book-details {
+    flex: 1;
+}
+
+.issued-book-details .book-category {
+    font-size: 11px;
+}
+
+.issued-book-details h3 {
+    margin: 6px 0 4px;
+    color: #222222;
+    font-size: 16px;
+}
+
+.issued-book-details p {
+    margin: 0 0 12px;
+    color: #777777;
+    font-size: 13px;
+}
+
+.issued-book-meta {
+    display: flex;
+    gap: 25px;
+    color: #888888;
+    font-size: 11px;
+}
+
+.due-normal {
+    color: #27864b;
+    font-weight: 600;
+}
+
+.due-soon {
+    color: #d16a20;
+    font-weight: 600;
+}
+
+.issued-book-action {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+.book-status {
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.active-book {
+    background: #e9f7ee;
+    color: #27864b;
+}
+
+.issued-book-action button {
+    padding: 8px 14px;
+    border: 0;
+    border-radius: 6px;
+    background: var(--purple);
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.history-table {
+    width: 100%;
+}
+
+.history-row {
+    min-height: 55px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 15px;
+    padding: 8px 20px;
+    border-bottom: 1px solid #eeeeee;
+    color: #555555;
+    font-size: 12px;
+}
+
+.history-row:last-child {
+    border-bottom: 0;
+}
+
+.history-header {
+    min-height: 45px;
+    background: #fafafa;
+    color: #777777;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.returned-status {
+    color: #27864b;
+    font-weight: 600;
+}
+
+.view-history-btn {
+    border: 0;
+    background: transparent;
+    color: var(--purple);
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.library-card-page {

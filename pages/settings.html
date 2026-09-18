@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Library ERP</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/settings.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <div class="header-logo">
+            <img src="../logo.png" alt="College Library Logo">
+
+            <div class="brand-info">
+                <strong>Library ERP</strong>
+                <span>College Management System</span>
+            </div>
+        </div>
+
+        <div class="topbar">
+
+            <button class="menu-btn" id="menuBtn" type="button">
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+            </button>
+
+            <div class="welcome">
+                <h1>College Library Management ERP</h1>
+                <p>Welcome back, <strong>Sanika!</strong></p>
+            </div>
+
+            <div class="header-actions">
+
+                <div class="search-area">
+                    <button class="search-btn" id="searchBtn" type="button">
+                        <img src="../icons/search.svg" alt="Search">
+                    </button>
+
+                    <input type="search"
+                           id="bookSearch"
+                           placeholder="Search Books..."
+                           aria-label="Search Books">
+                </div>
+
+                <div class="header-profile">
+                    <div class="header-avatar">S</div>
+
+                    <div class="header-user">
+                        <strong>Sanika</strong>
+                        <span>Library Member</span>
+                    </div>
+
+                    <a href="my-profile.html" class="header-profile-link">
+                        <img src="../icons/user.svg" alt="My Profile">
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <aside class="sidebar" id="sidebar">
+
+        <nav class="sidebar-nav">
+
+            <div class="nav-section">
+
+                <span class="nav-title">MAIN MENU</span>
+
+                <a href="../index.html" class="nav-item">
+                    <img src="../icons/home.svg" alt="Dashboard">
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="book-catalog.html" class="nav-item">
+                    <img src="../icons/catalog.svg" alt="Book Catalog">
+                    <span>Book Catalog</span>
+                </a>
+
+                <a href="members.html" class="nav-item">
+                    <img src="../icons/members.svg" alt="Members">
+                    <span>Members</span>
+                </a>
+
+                <a href="my-books.html" class="nav-item">
+                    <img src="../icons/books.svg" alt="My Books">
+                    <span>My Books</span>
+                </a>
+
+                <a href="wishlist.html" class="nav-item">
+                    <img src="../icons/heart.svg" alt="Wishlist">
+                    <span>Wishlist</span>
+                </a>
+
+                <a href="reservations.html" class="nav-item">
+                    <img src="../icons/calendar.svg" alt="Reservations">
+                    <span>Reservations</span>
+                </a>
+
+                <a href="notifications.html" class="nav-item">
+                    <img src="../icons/notifications.svg" alt="Notifications">
+                    <span>Notifications</span>
+                </a>
+
+            </div>
+
+            <div class="nav-section account-section">
+
+                <span class="nav-title">ACCOUNT</span>
+
+                <a href="library-card.html" class="nav-item">
+                    <img src="../icons/card.svg" alt="Library Card">
+                    <span>Library Card</span>
+                </a>
+
+                <a href="my-profile.html" class="nav-item">
+                    <img src="../icons/user.svg" alt="My Profile">
+                    <span>My Profile</span>
+                </a>
+
+                <a href="settings.html" class="nav-item active">
+                    <img src="../icons/settings.svg" alt="Settings">
+                    <span>Settings</span>
+                </a>
+
+                <a href="help.html" class="nav-item">
+                    <img src="../icons/help.svg" alt="Help">
+                    <span>Help</span>
+                </a>
+
+            </div>
+
+        </nav>
+
+    </aside>
+
+    <main class="main">
+
+        <section class="settings-page">
+
+            <div class="settings-heading">
+                <div>
+                    <h2>Settings</h2>
+                    <p>Manage your library account preferences.</p>
+                </div>
+
+                <button class="save-settings-btn" type="button">
+                    Save Changes
+                </button>
+            </div>
+
+            <div class="settings-layout">
+
+                <section class="settings-card">
+
+                    <div class="settings-card-heading">
+                        <span>ACCOUNT</span>
+                        <h3>Account Preferences</h3>
+                    </div>
+
+                    <div class="setting-row">
+                        <div>
+                            <strong>Email Notifications</strong>
+                            <p>Receive updates about your library account.</p>
+                        </div>
+
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span></span>
+                        </label>
+                    </div>
+
+                    <div class="setting-row">
+                        <div>
+                            <strong>Due Date Reminders</strong>
+                            <p>Get reminders before your books are due.</p>
+                        </div>
+
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span></span>
+                        </label>
+                    </div>
+
+                    <div class="setting-row">
+                        <div>
+                            <strong>Reservation Alerts</strong>
+                            <p>Notify me when a reserved book is available.</p>
+                        </div>
+
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span></span>
+                        </label>
+                    </div>
+
+                    <div class="setting-row">
+                        <div>
+                            <strong>New Book Updates</strong>
+                            <p>Receive notifications about newly added books.</p>
+                        </div>
+
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span></span>
+                        </label>
+                    </div>
+
+                </section>
+
+                <section class="settings-card">
+
+                    <div class="settings-card-heading">
+                        <span>DISPLAY</span>
+                        <h3>Display Preferences</h3>
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="language">Language</label>
+
+                        <select id="language">
+                            <option>English</option>
+                            <option>Hindi</option>
+                            <option>Marathi</option>
+                        </select>
+
+                    </div>
+
+    
+
+                    <div class="form-group">
+
+                        <label for="items">Books Per Page</label>
+
+                        <select id="items">
+                            <option>12</option>
+                            <option>24</option>
+                            <option>36</option>
+                        </select>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+            <section class="security-card">
+
+                <div class="settings-card-heading">
+                    <span>SECURITY</span>
+                    <h3>Password & Security</h3>
+                </div>
+
+                <div class="security-row">
+
+                    <div>
+                        <strong>Password</strong>
+                        <p>Last changed 3 months ago.</p>
+                    </div>
+
+                    <button type="button">
+                        Change Password
+                    </button>
+
+                </div>
+
+                <div class="security-row">
+
+                    <div>
+                        <strong>Two-Factor Authentication</strong>
+                        <p>Add an extra layer of security to your account.</p>
+                    </div>
+
+                    <span class="security-status">
+                        Not Enabled
+                    </span>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <script src="../script.js"></script>
+
+</body>
+
+</html>

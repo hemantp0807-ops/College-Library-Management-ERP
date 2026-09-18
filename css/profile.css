@@ -1,0 +1,202 @@
+.profile-page {
+    margin-top: 161px;
+    padding: 35px 40px 50px;
+}
+
+.profile-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.profile-heading h2 {
+    margin: 0 0 7px;
+    color: #222222;
+    font-size: 30px;
+}
+
+.profile-heading p {
+    margin: 0;
+    color: #777777;
+    font-size: 15px;
+}
+
+.edit-profile-btn {
+    padding: 11px 18px;
+    border: 0;
+    border-radius: 7px;
+    background: var(--purple);
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.profile-layout {
+    display: grid;
+    grid-template-columns: 1.35fr 1fr;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.profile-card,
+.contact-card,
+.profile-activity {
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+}
+
+.profile-card {
+    padding: 25px;
+}
+
+.profile-top {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.profile-avatar {
+    width: 92px;
+    height: 92px;
+    min-width: 92px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #f1edff;
+}
+
+.profile-avatar img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.profile-label,
+.profile-section-heading > span {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--purple);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+}
+
+.profile-top h3 {
+    margin: 0 0 5px;
+    color: #222222;
+    font-size: 24px;
+}
+
+.profile-top p {
+    margin: 0 0 9px;
+    color: #777777;
+    font-size: 12px;
+}
+
+.profile-active {
+    padding: 5px 9px;
+    border-radius: 12px;
+    background: #eaf7ee;
+    color: #27864b;
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.profile-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding-top: 23px;
+}
+
+.profile-detail span {
+    display: block;
+    margin-bottom: 6px;
+    color: #999999;
+    font-size: 9px;
+    letter-spacing: 0.8px;
+}
+
+.profile-detail strong {
+    color: #333333;
+    font-size: 12px;
+}
+
+.contact-card {
+    padding: 25px;
+}
+
+.profile-section-heading {
+    margin-bottom: 17px;
+}
+
+.profile-section-heading h3 {
+    margin: 0;
+    color: #222222;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.contact-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.contact-row:last-child {
+    border-bottom: 0;
+}
+
+.contact-row span {
+    color: #777777;
+    font-size: 12px;
+}
+
+.contact-row strong {
+    color: #333333;
+    font-size: 11px;
+}
+
+.profile-activity {
+    overflow: hidden;
+}
+
+.profile-activity .profile-section-heading {
+    padding: 20px 22px;
+    margin: 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.profile-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.profile-stats > div {
+    padding: 20px;
+    border-right: 1px solid #eeeeee;
+}
+
+.profile-stats > div:last-child {
+    border-right: 0;
+}
+
+.profile-stats span {
+    display: block;
+    margin-bottom: 8px;
+    color: #777777;
+    font-size: 11px;
+}
+
+.profile-stats strong {
+    color: #222222;
+    font-size: 23px;
+}

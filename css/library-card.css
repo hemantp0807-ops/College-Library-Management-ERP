@@ -1,0 +1,279 @@
+.library-card-page {
+    margin-top: 161px;
+    padding: 35px 40px 50px;
+}
+
+.library-card-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.library-card-heading h2 {
+    margin: 0 0 7px;
+    font-size: 30px;
+    color: #222222;
+}
+
+.library-card-heading p {
+    margin: 0;
+    color: #777777;
+    font-size: 15px;
+}
+
+.download-card-btn {
+    border: 0;
+    border-radius: 7px;
+    padding: 11px 18px;
+    background: var(--purple);
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.library-card-layout {
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
+    gap: 25px;
+    align-items: stretch;
+}
+
+.digital-card {
+    min-height: 300px;
+    padding: 25px;
+    border-radius: 14px;
+    background: #292929;
+    color: #ffffff;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.card-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-brand img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+}
+
+.card-brand strong {
+    display: block;
+    font-size: 14px;
+}
+
+.card-brand span {
+    display: block;
+    margin-top: 3px;
+    color: #bbbbbb;
+    font-size: 9px;
+}
+
+.card-label {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    color: #bbbbbb;
+}
+
+.card-main {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 28px 0;
+}
+
+.card-member-avatar {
+    width: 82px;
+    height: 82px;
+    min-width: 82px;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #f1edff;
+}
+.card-member-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.card-member-info > span {
+    color: #999999;
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+.card-member-info h3 {
+    margin: 5px 0 18px;
+    font-size: 25px;
+}
+
+.card-details {
+    display: flex;
+    gap: 35px;
+}
+
+.card-details span,
+.card-footer span {
+    display: block;
+    margin-bottom: 5px;
+    color: #999999;
+    font-size: 8px;
+    letter-spacing: 0.7px;
+}
+
+.card-details strong,
+.card-footer strong {
+    font-size: 11px;
+}
+
+.card-footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 18px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.card-code {
+    text-align: right;
+}
+
+.barcode {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+    height: 28px;
+    margin-top: 5px;
+}
+
+.barcode i {
+    display: block;
+    width: 2px;
+    margin-left: 3px;
+    background: #ffffff;
+}
+
+.barcode i:nth-child(2),
+.barcode i:nth-child(6),
+.barcode i:nth-child(10) {
+    width: 4px;
+}
+
+.card-information {
+    padding: 25px;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+}
+
+.card-information h3 {
+    margin: 0 0 18px;
+    font-size: 18px;
+    color: #222222;
+}
+
+.card-info-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.card-info-row span {
+    color: #777777;
+    font-size: 12px;
+}
+
+.card-info-row strong {
+    color: #333333;
+    font-size: 12px;
+}
+
+.card-active {
+    color: #27864b !important;
+}
+
+.card-note {
+    margin-top: 20px;
+    padding: 13px;
+    border-radius: 7px;
+    background: #f7f5ff;
+}
+
+.card-note strong {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--purple);
+    font-size: 12px;
+}
+
+.card-note p {
+    margin: 0;
+    color: #777777;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.card-usage {
+    margin-top: 25px;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.usage-heading {
+    padding: 20px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.usage-heading h3 {
+    margin: 0 0 5px;
+    color: #222222;
+    font-size: 17px;
+}
+
+.usage-heading p {
+    margin: 0;
+    color: #888888;
+    font-size: 12px;
+}
+
+.usage-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.usage-item {
+    padding: 20px;
+    border-right: 1px solid #eeeeee;
+}
+
+.usage-item:last-child {
+    border-right: 0;
+}
+
+.usage-item span {
+    display: block;
+    margin-bottom: 8px;
+    color: #777777;
+    font-size: 11px;
+}
+
+.usage-item strong {
+    color: #222222;
+    font-size: 22px;
+}

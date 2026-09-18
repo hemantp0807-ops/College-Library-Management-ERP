@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members - Library ERP</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/members.css">
+
+    <style>
+        .add-member-toggle {
+            display: none;
+        }
+
+        .add-member-details {
+            position: relative;
+        }
+
+        .add-member-btn {
+            cursor: pointer;
+        }
+
+        .add-member-modal {
+            display: none;
+            position: fixed;
+            top: 80px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.45);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+            padding: 90px 30px 30px;
+            box-sizing: border-box;
+        }
+
+        .add-member-toggle:checked ~ .add-member-modal {
+            display: flex;
+        }
+
+        .member-form-card {
+            width: 100%;
+            max-width: 720px;
+            max-height: calc(100vh - 120px);
+            overflow-y: auto;
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 26px 30px;
+            box-sizing: border-box;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
+        }
+
+        .member-form-header {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .member-form-header h3 {
+            margin: 0;
+            color: #272044;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .member-form-header p {
+            margin: 5px 0 0;
+            color: #777777;
+            font-size: 14px;
+        }
+
+        .member-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px 18px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .form-group.full-width {
+            grid-column: 1 / -1;
+        }
+
+        .form-group label {
+            color: #333333;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid #dddddd;
+            border-radius: 8px;
+            padding: 10px 12px;
+            font-family: inherit;
+            font-size: 14px;
+            color: #333333;
+            background: #ffffff;
+            outline: none;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: #6f4bb2;
+            box-shadow: 0 0 0 3px rgba(111, 75, 178, 0.08);
+        }
+
+        .form-group textarea {
+            min-height: 65px;
+            resize: vertical;
+        }
+
+        .form-actions {
+            grid-column: 1 / -1;
+            display: flex;
+            justify-content: flex-end;
+            gap: 12px;
+            margin-top: 5px;
+            padding-top: 17px;
+            border-top: 1px solid #eeeeee;
+        }
+
+        .cancel-member-btn,
+        .save-member-btn {
+            border: none;
+            border-radius: 8px;
+            padding: 10px 22px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .cancel-member-btn {
+            background: #f1f1f1;
+            color: #555555;
+        }
+
+        .save-member-btn {
+            background: #6f4bb2;
+            color: #ffffff;
+        }
+
+        .cancel-member-btn:hover {
+            background: #e5e5e5;
+        }
+
+        .save-member-btn:hover {
+            background: #5e3fa0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <div class="header-logo">
+            <img src="../logo.png" alt="College Library Logo">
+
+            <div class="brand-info">
+                <strong>Library ERP</strong>
+                <span>College Management System</span>
+            </div>
+        </div>
+
+        <div class="topbar">
+
+            <button class="menu-btn" type="button">
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+            </button>
+
+            <div class="welcome">
+                <h1>College Library Management ERP</h1>
+                <p>Welcome back, <strong>Sanika!</strong></p>
+            </div>
+
+            <div class="header-actions">
+
+                <div class="search-area">
+
+                    <button class="search-btn" type="button">
+                        <img src="../icons/search.svg" alt="Search">
+                    </button>
+
+                    <input type="search"
+                           placeholder="Search Books..."
+                           aria-label="Search Books">
+
+                </div>
+
+                <div class="header-profile">
+
+                    <div class="header-avatar">S</div>
+
+                    <div class="header-user">
+                        <strong>Sanika</strong>
+                        <span>Library Member</span>
+                    </div>
+
+                    <a href="my-profile.html" class="header-profile-link">
+                        <img src="../icons/user.svg" alt="My Profile">
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <aside class="sidebar">
+
+        <nav class="sidebar-nav">
+
+            <div class="nav-section">
+
+                <span class="nav-title">MAIN MENU</span>
+
+                <a href="../index.html" class="nav-item">
+                    <img src="../icons/home.svg" alt="Dashboard">
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="book-catalog.html" class="nav-item">
+                    <img src="../icons/catalog.svg" alt="Book Catalog">
+                    <span>Book Catalog</span>
+                </a>
+
+                <a href="members.html" class="nav-item active">
+                    <img src="../icons/members.svg" alt="Members">
+                    <span>Members</span>
+                </a>
+
+                <a href="my-books.html" class="nav-item">
+                    <img src="../icons/books.svg" alt="My Books">
+                    <span>My Books</span>
+                </a>
+
+                <a href="wishlist.html" class="nav-item">
+                    <img src="../icons/heart.svg" alt="Wishlist">
+                    <span>Wishlist</span>
+                </a>
+
+                <a href="reservations.html" class="nav-item">
+                    <img src="../icons/calendar.svg" alt="Reservations">
+                    <span>Reservations</span>
+                </a>
+
+                <a href="notifications.html" class="nav-item">
+                    <img src="../icons/notifications.svg" alt="Notifications">
+                    <span>Notifications</span>
+                </a>
+
+            </div>
+
+
+            <div class="nav-section account-section">
+
+                <span class="nav-title">ACCOUNT</span>
+
+                <a href="library-card.html" class="nav-item">
+                    <img src="../icons/card.svg" alt="Library Card">
+                    <span>Library Card</span>
+                </a>
+
+                <a href="my-profile.html" class="nav-item">
+                    <img src="../icons/user.svg" alt="My Profile">
+                    <span>My Profile</span>
+                </a>
+
+                <a href="settings.html" class="nav-item">
+                    <img src="../icons/settings.svg" alt="Settings">
+                    <span>Settings</span>
+                </a>
+
+                <a href="help.html" class="nav-item">
+                    <img src="../icons/help.svg" alt="Help">
+                    <span>Help</span>
+                </a>
+
+            </div>
+
+        </nav>
+
+    </aside>
+
+
+    <main class="main">
+
+        <section class="members-page">
+
+            <div class="members-heading">
+
+                <div>
+                    <h2>Library Members</h2>
+                    <p>Manage registered students, faculty and library members.</p>
+                </div>
+
+
+                <div class="add-member-details">
+
+                    <input type="checkbox"
+                           id="addMemberToggle"
+                           class="add-member-toggle">
+
+                    <label for="addMemberToggle"
+                           class="add-member-btn">
+                        + Add Member
+                    </label>
+
+
+                    <div class="add-member-modal">
+
+                        <div class="member-form-card">
+
+                            <div class="member-form-header">
+
+                                <div>
+                                    <h3>Add New Member</h3>
+                                    <p>Enter the details of the new library member.</p>
+                                </div>
+
+                            </div>
+
+
+                            <form class="member-form">
+
+                                <div class="form-group">
+                                    <label for="memberName">Full Name</label>
+
+                                    <input type="text"
+                                           id="memberName"
+                                           placeholder="Enter full name">
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label for="memberEmail">Email Address</label>
+
+                                    <input type="email"
+                                           id="memberEmail"
+                                           placeholder="example@college.edu">
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label for="memberId">Member ID</label>
+
+                                    <input type="text"
+                                           id="memberId"
+                                           placeholder="LIB1029">
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label for="memberPhone">Phone Number</label>
+
+                                    <input type="tel"
+                                           id="memberPhone"
+                                           placeholder="Enter phone number">
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label for="memberDepartment">
+                                        Department
+                                    </label>
+
+                                    <select id="memberDepartment">
+
+                                        <option>Select Department</option>
+                                        <option>Computer Science</option>
+                                        <option>Information Technology</option>
+                                        <option>Mechanical Engineering</option>
+                                        <option>Electronics</option>
+                                        <option>Electrical Engineering</option>
+                                        <option>Civil Engineering</option>
+                                        <option>Management</option>
+                                        <option>Arts</option>
+                                        <option>Science</option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label for="memberType">
+                                        Member Type
+                                    </label>
+
+                                    <select id="memberType">
+
+                                        <option>Select Member Type</option>
+                                        <option>Student</option>
+                                        <option>Faculty</option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label for="memberDob">
+                                        Date of Birth
+                                    </label>
+
+                                    <input type="date"
+                                           id="memberDob">
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label for="memberStatus">
+                                        Status
+                                    </label>
+
+                                    <select id="memberStatus">
+
+                                        <option>Active</option>
+                                        <option>Inactive</option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <div class="form-group full-width">
+
+                                    <label for="memberAddress">
+                                        Address
+                                    </label>
+
+                                    <textarea id="memberAddress"
+                                              placeholder="Enter complete address"></textarea>
+
+                                </div>
+
+
+                                <div class="form-actions">
+
+                                    <label for="addMemberToggle"
+                                           class="cancel-member-btn">
+                                        Cancel
+                                    </label>
+
+                                    <button class="save-member-btn"
+                                            type="submit">
+                                        Add Member
+                                    </button>
+
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="member-stats">
+
+                <div class="member-stat-card">
+                    <span>Total Members</span>
+                    <strong>1,240</strong>
+                    <small>Registered members</small>
+                </div>
+
+                <div class="member-stat-card">
+                    <span>Students</span>
+                    <strong>1,080</strong>
+                    <small>Active students</small>
+                </div>
+
+                <div class="member-stat-card">
+                    <span>Faculty</span>
+                    <strong>160</strong>
+                    <small>Faculty members</small>
+                </div>
+
+                <div class="member-stat-card">
+                    <span>Active Members</span>
+                    <strong>1,186</strong>
+                    <small>Currently active</small>
+                </div>
+
+            </div>
+
+
+            <div class="members-toolbar">
+
+                <div class="member-search">
+
+                    <img src="../icons/search.svg" alt="Search">
+
+                    <input type="search"
+                           placeholder="Search by name, member ID or department...">
+
+                </div>
+
+
+                <select>
+                    <option>All Members</option>
+                    <option>Students</option>
+                    <option>Faculty</option>
+                </select>
+
+
+                <select>
+                    <option>All Status</option>
+                    <option>Active</option>
+                    <option>Inactive</option>
+                </select>
+
+            </div>
+
+
+            <section class="members-table-card">
+
+                <div class="table-heading">
+                    <h3>Member List</h3>
+                    <span>Showing 6 of 1,240 members</span>
+                </div>
+
+
+                <div class="members-table">
+
+                    <div class="member-row member-header">
+
+                        <span>Member</span>
+                        <span>Member ID</span>
+                        <span>Department</span>
+                        <span>Type</span>
+                        <span>Books Issued</span>
+                        <span>Status</span>
+                        <span>Action</span>
+
+                    </div>
+
+
+                    <div class="member-row">
+
+                        <div class="member-name">
+
+                            <div class="member-avatar">
+                                RP
+                            </div>
+
+                            <div>
+                                <strong>Rahul Patil</strong>
+                                <small>rahul.patil@college.edu</small>
+                            </div>
+
+                        </div>
+
+                        <span>LIB1024</span>
+                        <span>Computer Science</span>
+                        <span>Student</span>
+                        <span>3</span>
+                        <span class="member-active">Active</span>
+
+                        <button type="button">
+                            View
+                        </button>
+
+                    </div>
+
+
+                    <div class="member-row">
+
+                        <div class="member-name">
+
+                            <div class="member-avatar">
+                                PS
+                            </div>
+
+                            <div>
+                                <strong>Priya Sharma</strong>
+                                <small>priya.sharma@college.edu</small>
+                            </div>
+
+                        </div>
+
+                        <span>LIB1025</span>
+                        <span>Information Technology</span>
+                        <span>Student</span>
+                        <span>2</span>
+                        <span class="member-active">Active</span>
+
+                        <button type="button">
+                            View
+                        </button>
+
+                    </div>
+
+
+                    <div class="member-row">
+
+                        <div class="member-name">
+
+                            <div class="member-avatar">
+                                AM
+                            </div>
+
+                            <div>
+                                <strong>Amit More</strong>
+                                <small>amit.more@college.edu</small>
+                            </div>
+
+                        </div>
+
+                        <span>LIB1026</span>
+                        <span>Mechanical Engineering</span>
+                        <span>Student</span>
+                        <span>4</span>
+                        <span class="member-active">Active</span>
+
+                        <button type="button">
+                            View
+                        </button>
+
+                    </div>
+
+
+                    <div class="member-row">
+
+                        <div class="member-name">
+
+                            <div class="member-avatar">
+                                SP
+                            </div>
+
+                            <div>
+                                <strong>Sneha Patil</strong>
+                                <small>sneha.patil@college.edu</small>
+                            </div>
+
+                        </div>
+
+                        <span>LIB1027</span>
+                        <span>Electronics</span>
+                        <span>Student</span>
+                        <span>1</span>
+                        <span class="member-active">Active</span>
+
+                        <button type="button">
+                            View
+                        </button>
+
+                    </div>
+
+
+                    <div class="member-row">
+
+                        <div class="member-name">
+
+                            <div class="member-avatar">
+                                AK
+                            </div>
+
+                            <div>
+                                <strong>Dr. Anil Kulkarni</strong>
+                                <small>anil.kulkarni@college.edu</small>
+                            </div>
+
+                        </div>
+
+                        <span>LIB0501</span>
+                        <span>Computer Science</span>
+                        <span>Faculty</span>
+                        <span>2</span>
+                        <span class="member-active">Active</span>
+
+                        <button type="button">
+                            View
+                        </button>
+
+                    </div>
+
+
+                    <div class="member-row">
+
+                        <div class="member-name">
+
+                            <div class="member-avatar">
+                                NM
+                            </div>
+
+                            <div>
+                                <strong>Neha More</strong>
+                                <small>neha.more@college.edu</small>
+                            </div>
+
+                        </div>
+
+                        <span>LIB1028</span>
+                        <span>Management</span>
+                        <span>Student</span>
+                        <span>2</span>
+                        <span class="member-active">Active</span>
+
+                        <button type="button">
+                            View
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

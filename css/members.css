@@ -1,0 +1,212 @@
+.book-actions .reserve-btn {
+    background: #333333;
+}
+.members-page {
+    margin-top: 161px;
+    padding: 35px 40px 50px;
+}
+
+.members-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.members-heading h2 {
+    margin: 0 0 7px;
+    font-size: 30px;
+    color: #222222;
+}
+
+.members-heading p {
+    margin: 0;
+    color: #777777;
+    font-size: 15px;
+}
+
+.add-member-btn {
+    border: 0;
+    border-radius: 7px;
+    padding: 11px 18px;
+    background: var(--purple);
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.member-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.member-stat-card {
+    padding: 18px 20px;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 9px;
+}
+
+.member-stat-card span {
+    display: block;
+    color: #777777;
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+
+.member-stat-card strong {
+    display: block;
+    color: #222222;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.member-stat-card small {
+    color: #999999;
+    font-size: 11px;
+}
+
+.members-toolbar {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.member-search {
+    flex: 1;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 14px;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 7px;
+}
+
+.member-search img {
+    width: 18px;
+    height: 18px;
+}
+
+.member-search input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    font-size: 13px;
+}
+
+.members-toolbar select {
+    width: 170px;
+    border: 1px solid #dddddd;
+    border-radius: 7px;
+    padding: 0 12px;
+    background: #ffffff;
+    color: #444444;
+    outline: 0;
+}
+
+.members-table-card {
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+.table-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.table-heading h3 {
+    margin: 0;
+    font-size: 17px;
+    color: #222222;
+}
+
+.table-heading span {
+    color: #888888;
+    font-size: 12px;
+}
+
+.members-table {
+    width: 100%;
+}
+
+.member-row {
+    min-height: 68px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.4fr 0.8fr 0.9fr 0.8fr 0.6fr;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 20px;
+    border-bottom: 1px solid #eeeeee;
+    color: #555555;
+    font-size: 12px;
+}
+
+.member-row:last-child {
+    border-bottom: 0;
+}
+
+.member-header {
+    min-height: 48px;
+    background: #fafafa;
+    color: #777777;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.member-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.member-avatar {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #f0ecff;
+    color: var(--purple);
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.member-name strong {
+    display: block;
+    margin-bottom: 3px;
+    color: #333333;
+    font-size: 13px;
+}
+
+.member-name small {
+    display: block;
+    color: #999999;
+    font-size: 10px;
+}
+
+.member-active {
+    color: #27864b;
+    font-weight: 600;
+}
+
+.member-row > button {
+    width: fit-content;
+    border: 0;
+    background: transparent;
+    color: var(--purple);
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}

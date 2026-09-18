@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications - Library ERP</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/notifications.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <div class="header-logo">
+            <img src="../logo.png" alt="College Library Logo">
+
+            <div class="brand-info">
+                <strong>Library ERP</strong>
+                <span>College Management System</span>
+            </div>
+        </div>
+
+        <div class="topbar">
+
+            <button class="menu-btn" id="menuBtn" type="button">
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+            </button>
+
+            <div class="welcome">
+                <h1>College Library Management ERP</h1>
+                <p>Welcome back, <strong>Sanika!</strong></p>
+            </div>
+
+            <div class="header-actions">
+
+                <div class="search-area">
+                    <button class="search-btn" id="searchBtn" type="button">
+                        <img src="../icons/search.svg" alt="Search">
+                    </button>
+
+                    <input type="search"
+                           id="bookSearch"
+                           placeholder="Search Books..."
+                           aria-label="Search Books">
+                </div>
+
+                <div class="header-profile">
+                    <div class="header-avatar">S</div>
+
+                    <div class="header-user">
+                        <strong>Sanika</strong>
+                        <span>Library Member</span>
+                    </div>
+
+                    <a href="my-profile.html" class="header-profile-link">
+                        <img src="../icons/user.svg" alt="My Profile">
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <aside class="sidebar" id="sidebar">
+
+        <nav class="sidebar-nav">
+
+            <div class="nav-section">
+
+                <span class="nav-title">MAIN MENU</span>
+
+                <a href="../index.html" class="nav-item">
+                    <img src="../icons/home.svg" alt="Dashboard">
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="book-catalog.html" class="nav-item">
+                    <img src="../icons/catalog.svg" alt="Book Catalog">
+                    <span>Book Catalog</span>
+                </a>
+
+                <a href="members.html" class="nav-item">
+                    <img src="../icons/members.svg" alt="Members">
+                    <span>Members</span>
+                </a>
+
+                <a href="my-books.html" class="nav-item">
+                    <img src="../icons/books.svg" alt="My Books">
+                    <span>My Books</span>
+                </a>
+
+                <a href="wishlist.html" class="nav-item">
+                    <img src="../icons/heart.svg" alt="Wishlist">
+                    <span>Wishlist</span>
+                </a>
+
+                <a href="reservations.html" class="nav-item">
+                    <img src="../icons/calendar.svg" alt="Reservations">
+                    <span>Reservations</span>
+                </a>
+
+                <a href="notifications.html" class="nav-item active">
+                    <img src="../icons/notifications.svg" alt="Notifications">
+                    <span>Notifications</span>
+                </a>
+
+            </div>
+
+            <div class="nav-section account-section">
+
+                <span class="nav-title">ACCOUNT</span>
+
+                <a href="library-card.html" class="nav-item">
+                    <img src="../icons/card.svg" alt="Library Card">
+                    <span>Library Card</span>
+                </a>
+
+                <a href="my-profile.html" class="nav-item">
+                    <img src="../icons/user.svg" alt="My Profile">
+                    <span>My Profile</span>
+                </a>
+
+                <a href="settings.html" class="nav-item">
+                    <img src="../icons/settings.svg" alt="Settings">
+                    <span>Settings</span>
+                </a>
+
+                <a href="help.html" class="nav-item">
+                    <img src="../icons/help.svg" alt="Help">
+                    <span>Help</span>
+                </a>
+
+            </div>
+
+        </nav>
+
+    </aside>
+
+    <main class="main">
+
+        <section class="notifications-page">
+
+            <div class="notifications-heading">
+
+                <div>
+                    <h2>Notifications</h2>
+                    <p>Stay updated with your library activity.</p>
+                </div>
+
+                <button class="mark-all-btn" type="button">
+                    Mark All as Read
+                </button>
+
+            </div>
+
+            <div class="notification-summary">
+
+                <div class="notification-summary-item">
+                    <span>All Notifications</span>
+                    <strong>8</strong>
+                </div>
+
+                <div class="notification-summary-item">
+                    <span>Unread</span>
+                    <strong>3</strong>
+                </div>
+
+                <div class="notification-summary-item">
+                    <span>This Week</span>
+                    <strong>5</strong>
+                </div>
+
+            </div>
+
+            <section class="notifications-card">
+
+                <div class="notifications-card-heading">
+
+                    <div>
+                        <span>RECENT ACTIVITY</span>
+                        <h3>Your Notifications</h3>
+                    </div>
+
+                    <select aria-label="Filter notifications">
+                        <option>All Notifications</option>
+                        <option>Unread</option>
+                        <option>Books</option>
+                        <option>Reservations</option>
+                    </select>
+
+                </div>
+
+                <div class="notification-list">
+
+                    <div class="notification-item unread">
+
+                        <div class="notification-icon book-notification">
+                            <img src="../icons/books.svg" alt="Book">
+                        </div>
+
+                        <div class="notification-content">
+                            <h3>Book Due Soon</h3>
+                            <p>
+                                <strong>A Brief History of Time</strong>
+                                is due on 20 September 2026.
+                            </p>
+                            <span>Today, 9:15 AM</span>
+                        </div>
+
+                        <span class="unread-dot"></span>
+
+                    </div>
+
+                    <div class="notification-item unread">
+
+                        <div class="notification-icon reservation-notification">
+                            <img src="../icons/calendar.svg" alt="Reservation">
+                        </div>
+
+                        <div class="notification-content">
+                            <h3>Reservation Ready</h3>
+                            <p>
+                                Your reserved copy of
+                                <strong>The Alchemist</strong>
+                                is ready for pickup.
+                            </p>
+                            <span>Today, 8:40 AM</span>
+                        </div>
+
+                        <span class="unread-dot"></span>
+
+                    </div>
+
+                    <div class="notification-item unread">
+
+                        <div class="notification-icon reminder-notification">
+                            <img src="../icons/notifications.svg" alt="Reminder">
+                        </div>
+
+                        <div class="notification-content">
+                            <h3>Return Reminder</h3>
+                            <p>
+                                Please return
+                                <strong>Harry Potter</strong>
+                                before the due date to avoid late fees.
+                            </p>
+                            <span>Yesterday, 5:20 PM</span>
+                        </div>
+
+                        <span class="unread-dot"></span>
+
+                    </div>
+
+                    <div class="notification-item">
+
+                        <div class="notification-icon success-notification">
+                            <img src="../icons/card.svg" alt="Library">
+                        </div>
+
+                        <div class="notification-content">
+                            <h3>Book Returned Successfully</h3>
+                            <p>
+                                <strong>Atomic Habits</strong>
+                                has been successfully returned to the library.
+                            </p>
+                            <span>17 Sep 2026, 4:10 PM</span>
+                        </div>
+
+                    </div>
+
+                    <div class="notification-item">
+
+                        <div class="notification-icon book-notification">
+                            <img src="../icons/books.svg" alt="Book">
+                        </div>
+
+                        <div class="notification-content">
+                            <h3>New Book Added</h3>
+                            <p>
+                                New books have been added to the
+                                <strong>Computer Science</strong> collection.
+                            </p>
+                            <span>16 Sep 2026, 11:30 AM</span>
+                        </div>
+
+                    </div>
+
+                    <div class="notification-item">
+
+                        <div class="notification-icon reservation-notification">
+                            <img src="../icons/calendar.svg" alt="Reservation">
+                        </div>
+
+                        <div class="notification-content">
+                            <h3>Reservation Confirmed</h3>
+                            <p>
+                                Your reservation for
+                                <strong>Sherlock Holmes</strong>
+                                has been confirmed.
+                            </p>
+                            <span>15 Sep 2026, 2:45 PM</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <script src="../script.js"></script>
+
+</body>
+
+</html>
