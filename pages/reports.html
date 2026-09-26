@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports - College Library Management System</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/reports.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <div class="header-logo">
+            <img src="../logo.png" alt="College Library Logo">
+
+            <div class="brand-info">
+                <strong>Library System</strong>
+                <span>College Management System</span>
+            </div>
+        </div>
+
+        <div class="topbar">
+
+            <button class="menu-btn" id="menuBtn" type="button">
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+            </button>
+
+            <div class="welcome">
+                <h1>College Library Management System</h1>
+                <p>Welcome back, <strong>Sanika!</strong></p>
+            </div>
+
+            <div class="header-actions">
+
+                <div class="search-area">
+                    <button class="search-btn" id="searchBtn" type="button">
+                        <img src="../icons/search.svg" alt="Search">
+                    </button>
+
+                    <input type="search"
+                           id="bookSearch"
+                           placeholder="Search Books..."
+                           aria-label="Search Books">
+                </div>
+
+                <div class="header-profile">
+
+                    <div class="header-avatar">S</div>
+
+                    <div class="header-user">
+                        <strong>Sanika</strong>
+                        <span>Library Administrator</span>
+                    </div>
+
+                    <a href="my-profile.html" class="header-profile-link">
+                        <img src="../icons/user.svg" alt="Admin Profile">
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <aside class="sidebar" id="sidebar">
+
+        <nav class="sidebar-nav">
+
+            <div class="nav-section">
+
+                <span class="nav-title">MAIN MENU</span>
+
+                <a href="../index.html" class="nav-item">
+                    <img src="../icons/home.svg" alt="Dashboard">
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="book-catalog.html" class="nav-item">
+                    <img src="../icons/catalog.svg" alt="Book Catalog">
+                    <span>Book Catalog</span>
+                </a>
+
+                <a href="members.html" class="nav-item">
+                    <img src="../icons/members.svg" alt="Members">
+                    <span>Members</span>
+                </a>
+
+                <a href="my-books.html" class="nav-item">
+                    <img src="../icons/books.svg" alt="Issue and Return">
+                    <span>My Books</span>
+                </a>
+
+                <a href="reports.html" class="nav-item active">
+                    <img src="../icons/reports.svg" alt="Reports">
+                    <span>Reports</span>
+                </a>
+
+                <a href="reservations.html" class="nav-item">
+                    <img src="../icons/calendar.svg" alt="Reservations">
+                    <span>Reservations</span>
+                </a>
+
+                <a href="notifications.html" class="nav-item">
+                    <img src="../icons/notifications.svg" alt="Notifications">
+                    <span>Notifications</span>
+                </a>
+
+            </div>
+
+
+            <div class="nav-section account-section">
+
+                <span class="nav-title">ADMINISTRATION</span>
+
+                <a href="library-card.html" class="nav-item">
+                    <img src="../icons/card.svg" alt="Library Cards">
+                    <span>Library Card</span>
+                </a>
+
+                <a href="my-profile.html" class="nav-item">
+                    <img src="../icons/user.svg" alt="Admin Profile">
+                    <span>My Profile</span>
+                </a>
+
+                <a href="settings.html" class="nav-item">
+                    <img src="../icons/settings.svg" alt="Settings">
+                    <span>Settings</span>
+                </a>
+
+                <a href="help.html" class="nav-item">
+                    <img src="../icons/help.svg" alt="Help">
+                    <span>Help</span>
+                </a>
+
+            </div>
+
+        </nav>
+
+    </aside>
+
+
+    <main class="main">
+
+        <section class="reports-page">
+
+            <div class="reports-heading">
+
+                <div>
+                    <h2>Library Reports</h2>
+                    <p>Monitor library circulation, inventory, and member activity.</p>
+                </div>
+
+                <button class="export-button" type="button">
+                    Export Report
+                </button>
+
+            </div>
+
+
+            <div class="report-stats">
+
+                <div class="report-stat-card purple">
+                    <span>Total Books</span>
+                    <strong>2,450</strong>
+                    <small>Books in library</small>
+                </div>
+
+                <div class="report-stat-card violet">
+                    <span>Issued Books</span>
+                    <strong>186</strong>
+                    <small>Currently issued</small>
+                </div>
+
+                <div class="report-stat-card pink">
+                    <span>Available Books</span>
+                    <strong>2,264</strong>
+                    <small>Currently available</small>
+                </div>
+
+                <div class="report-stat-card orange">
+                    <span>Total Members</span>
+                    <strong>1,240</strong>
+                    <small>Registered members</small>
+                </div>
+
+            </div>
+
+
+            <div class="report-grid">
+
+                <section class="report-card">
+
+                    <div class="report-card-heading">
+                        <div>
+                            <h3>Book Circulation</h3>
+                            <p>Current circulation summary</p>
+                        </div>
+                    </div>
+
+                    <div class="circulation-list">
+
+                        <div class="circulation-item">
+                            <span>Books Issued</span>
+                            <strong>186</strong>
+                        </div>
+
+                        <div class="circulation-item">
+                            <span>Books Returned</span>
+                            <strong>142</strong>
+                        </div>
+
+                        <div class="circulation-item">
+                            <span>Renewals</span>
+                            <strong>38</strong>
+                        </div>
+
+                        <div class="circulation-item overdue">
+                            <span>Overdue Returns</span>
+                            <strong>31</strong>
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <section class="report-card">
+
+                    <div class="report-card-heading">
+                        <div>
+                            <h3>Member Activity</h3>
+                            <p>Library membership overview</p>
+                        </div>
+                    </div>
+
+                    <div class="member-summary">
+
+                        <div class="member-number">
+                            <strong>1,240</strong>
+                            <span>Total Members</span>
+                        </div>
+
+                        <div class="member-number active-members">
+                            <strong>824</strong>
+                            <span>Active Members</span>
+                        </div>
+
+                        <div class="member-number inactive-members">
+                            <strong>416</strong>
+                            <span>Inactive Members</span>
+                        </div>
+
+                    </div>
+
+                    <div class="activity-bar">
+
+                        <div class="active-bar"></div>
+
+                    </div>
+
+                    <div class="activity-labels">
+                        <span>Active 66%</span>
+                        <span>Inactive 34%</span>
+                    </div>
+
+                </section>
+
+            </div>
+
+
+            <section class="report-card inventory-card">
+
+                <div class="report-card-heading">
+
+                    <div>
+                        <h3>Book Inventory</h3>
+                        <p>Books available by category</p>
+                    </div>
+
+                </div>
+
+                <div class="report-table">
+
+                    <div class="report-row report-header">
+                        <span>Category</span>
+                        <span>Total Books</span>
+                        <span>Issued</span>
+                        <span>Available</span>
+                    </div>
+
+                    <div class="report-row">
+                        <span>Computer Science</span>
+                        <span>620</span>
+                        <span>58</span>
+                        <span>562</span>
+                    </div>
+
+                    <div class="report-row">
+                        <span>Engineering</span>
+                        <span>480</span>
+                        <span>37</span>
+                        <span>443</span>
+                    </div>
+
+                    <div class="report-row">
+                        <span>Literature</span>
+                        <span>390</span>
+                        <span>26</span>
+                        <span>364</span>
+                    </div>
+
+                    <div class="report-row">
+                        <span>Science</span>
+                        <span>350</span>
+                        <span>29</span>
+                        <span>321</span>
+                    </div>
+
+                    <div class="report-row">
+                        <span>Management</span>
+                        <span>310</span>
+                        <span>21</span>
+                        <span>289</span>
+                    </div>
+
+                    <div class="report-row">
+                        <span>Other</span>
+                        <span>300</span>
+                        <span>15</span>
+                        <span>285</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section class="report-card transactions-report">
+
+                <div class="report-card-heading">
+
+                    <div>
+                        <h3>Recent Transactions</h3>
+                        <p>Latest library activities</p>
+                    </div>
+
+                    <a href="issue-return.html">
+                        View All
+                    </a>
+
+                </div>
+
+                <div class="report-table transaction-report-table">
+
+                    <div class="report-row report-header">
+                        <span>Member</span>
+                        <span>Book</span>
+                        <span>Action</span>
+                        <span>Date</span>
+                    </div>
+
+                    <div class="report-row">
+                        <span>Rahul Patil</span>
+                        <span>Data Structures</span>
+                        <span class="issued">Issued</span>
+                        <span>11 Sep 2026</span>
+                    </div>
+
+                    <div class="report-row">
+                        <span>Priya Sharma</span>
+                        <span>Database Management</span>
+                        <span class="returned">Returned</span>
+                        <span>11 Sep 2026</span>
+                    </div>
+
+                    <div class="report-row">
+                        <span>Amit More</span>
+                        <span>Operating Systems</span>
+                        <span class="issued">Issued</span>
+                        <span>10 Sep 2026</span>
+                    </div>
+
+                    <div class="report-row">
+                        <span>Sneha Patil</span>
+                        <span>Computer Networks</span>
+                        <span class="returned">Returned</span>
+                        <span>10 Sep 2026</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <script src="../script.js"></script>
+
+</body>
+
+</html>
